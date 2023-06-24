@@ -9,7 +9,9 @@ app.use(cors()); // Enable CORS for all routes
 app.post('/calculate', (req, res) => {
     let data = req.body;
     let calculator = new MyCalculator(data.year, data.month, data.day, data.byear, data.bmonth, data.bday, data.jaxi, data.jahao, data.lastname, data.firstname);
-    try {
+    console.log("hi");
+
+	try {
         calculator.runCalculations();
         let results = calculator.printVariables();
         res.json(results);
