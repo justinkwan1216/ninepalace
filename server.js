@@ -21,6 +21,6 @@ app.post('/calculate', (req, res) => {
     }
 });
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log('App listening on port ' + (process.env.PORT || 3000));
+app.listen(process.env.PORT || 443, function () {
+  console.log('App listening on port ' + (process.env.PORT || 443));
 });
